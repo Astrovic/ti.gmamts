@@ -2,7 +2,7 @@
 
 Open the [Google Mobile Ads Mediation Test Suite](https://developers.google.com/admob/ios/mediation-test-suite?hl=en) in a Titanium iOS app
 
-You can use this module if your app shows AdMob ads and uses mediations (InMobi, Facebook Audience Network, etc...)
+You can use this module if your app shows AdMob ads. It allows you to test whether you have correctly configured your app and ad units to be able to display ads from third-party networks through mediation (InMobi, Facebook Audience Network, etc...)
 
 You don't need `ti.gmamts` module if you use the [ti.admob](https://github.com/Astrovic/ti.admob/) module, this method has been added since [iOS version 4.8.0](https://github.com/Astrovic/ti.admob/releases/tag/ios-4.8.0), so you can directly use:
 
