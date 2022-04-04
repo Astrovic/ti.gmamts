@@ -19,7 +19,7 @@ Admob.showMediationTestSuite();
 - Create an [AdMob account](https://support.google.com/admob/answer/2784575) and [register an app](https://support.google.com/admob/answer/2773509).
 - Ensure you have correctly entered your **app ID** in your `tiapp.xml`.
 
-```js
+```xml
 <ios>
     <plist>
         <dict>        
@@ -33,14 +33,14 @@ Admob.showMediationTestSuite();
 ## Example Usage
 
 **tiapp.xml**
-```js
+```xml
 ...
 ...
 <ios>
     <plist>
         <dict>        
             <key>GADApplicationIdentifier</key>
-            <string><!--YOUR APP-ID ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX --></string>
+            <string><!--YOUR ADMOB APP-ID HERE--></string>
         </dict>
     </plist>
 </ios>
@@ -67,7 +67,7 @@ We need a binary to put into `platform/`, otherwise it won't be packaged with th
 However you can use them by following these steps:
 
 1. If you haven't already, from a terminal install **cocoapods** and then **cocoapods-binary**
-```js
+```console
 sudo gem install cocoapods
 sudo gem install cocoapods-binary
 ```
@@ -83,14 +83,14 @@ sudo gem install cocoapods-binary
 Titanium creates a basic Xcode project **gmamts.xcodeproj**
 
 4. Go to the module's `/ios` folder and create the Podfile
-```js
+```console
 cd gmamts/ios
 pod init
 ```
 
 5. This generates a **Podfile**. Open and edit the Podfile with the required frameworks:
 
-```js
+``` ruby
 # Uncomment the next line to define a global platform for your project
 plugin 'cocoapods-binary'
 install! 'cocoapods',
